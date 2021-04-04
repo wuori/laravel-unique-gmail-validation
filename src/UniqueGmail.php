@@ -4,7 +4,7 @@ namespace Wuori\UniqueGmail;
 
 use Illuminate\Contracts\Validation\Rule;
 
-class UniqueGmailRule implements Rule
+class UniqueGmail implements Rule
 {
     /** @var string */
     protected $attribute;
