@@ -1,10 +1,10 @@
 <?php
 
-namespace Wuori\UniqueGmailValidation\UniqueGmail;
+namespace Wuori\UniqueGmail;
 
 use Illuminate\Contracts\Validation\Rule;
 
-class UniqueGmail implements Rule
+class UniqueGmailRule implements Rule
 {
     /** @var string */
     protected $attribute;

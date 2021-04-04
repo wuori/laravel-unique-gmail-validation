@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Wuori\\UniqueGmailValidation\\": "src"
+            "Wuori\\UniqueGmail\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wuori\\UniqueGmailValidation\\Tests\\": "tests"
+            "Wuori\\UniqueGmail\\Tests\\": "tests"
         }
     },
     "scripts": {
