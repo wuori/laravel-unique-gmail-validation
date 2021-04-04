@@ -1,0 +1,56 @@
+{
+    "name": "wuori/laravel-unique-gmail-validation",
+    "description": "A validation rule to exclude 'duplicate' (added periods, etc.) email addresses.",
+    "keywords": [
+        "gmail",
+        "laravel-validation-rules",
+        "unique"
+    ],
+    "homepage": "https://github.com/wuori/laravel-unique-gmail-validation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Wuori",
+            "email": "michael.wuori@gmail.com",
+            "homepage": "https://github.com/wuori",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "laravel/legacy-factories": "^1.0.4",
+        "myclabs/php-enum": "^1.6",
+        "orchestra/testbench": "^4.5|^5.0|^6.0",
+        "phpunit/phpunit": "^9.3",
+    },
+    "autoload": {
+        "psr-4": {
+            "Wuori\\UniqueGmailValidation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wuori\\UniqueGmailValidation\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wuori\\UniqueGmailValidation\\UniqueGmailServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
