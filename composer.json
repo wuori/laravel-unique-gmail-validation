@@ -1,10 +1,13 @@
 {
     "name": "wuori/laravel-unique-gmail-validation",
-    "description": "A validation rule to exclude 'duplicate' (added periods, etc.) email addresses.",
+    "description": "A validation rule to test uniqueness of Gmail addresses with ./+ modifiers.",
     "keywords": [
         "gmail",
-        "laravel-validation-rules",
-        "unique"
+        "laravel",
+        "laravel-validation",
+        "unique",
+        "validation",
+        "email"
     ],
     "homepage": "https://github.com/wuori/laravel-unique-gmail-validation",
     "license": "MIT",
