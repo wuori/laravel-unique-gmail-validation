@@ -1,15 +1,15 @@
 # Validate uniqueness of Gmail addresses
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/wuori/laravel-unique-gmail-validation.svg?style=flat-square)](https://packagist.org/packages/wuori/laravel-unique-gmail-validation)
+[![Total Downloads](https://img.shields.io/packagist/dt/wuori/laravel-unique-gmail-validation.svg?style=flat-square)](https://packagist.org/packages/wuori/laravel-unique-gmail-validation)
+
 Gmail [allows two modifiers](https://gmail.googleblog.com/2008/03/2-hidden-ways-to-get-more-from-your.html), `+` and `.` to be added to your email address without affecting delivery. For example, `michaelwuori@gmail.com` and `michael.wuori@gmail.com` both work as valid addresses to the same Gmail account.
 
 The period (`.`) modifier can be placed anywhere within your account name, as in the example above. 
 
-The plus (`+`) modifier can be appended to your account name. Example: `michael.wuori+promocodes@gmail.com`;
+The plus (`+`) modifier can be appended to your account name. Example: `michael.wuori+junk@gmail.com`.
 
 This validation rule removes any period modifiers as well as any `+foo` appendages then compares the address to any existing `@gmail.com` emails that exist in the targeted model.
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/wuori/laravel-unique-gmail-validation.svg?style=flat-square)](https://packagist.org/packages/wuori/laravel-unique-gmail-validation)
-[![Total Downloads](https://img.shields.io/packagist/dt/wuori/laravel-unique-gmail-validation.svg?style=flat-square)](https://packagist.org/packages/wuori/laravel-unique-gmail-validation)
 
 ## Installation
 
